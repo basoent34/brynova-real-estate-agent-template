@@ -1,0 +1,8 @@
+import { BookingCTA, Hero } from "@/components/Sections";
+import { LeadForm } from "@/components/LeadForm";
+import { getPublicAgentConfig } from "@/lib/agent";
+
+export default function ContactPage() {
+  const agent = getPublicAgentConfig();
+  return <main><Hero agent={agent} eyebrow="Contact" title={`Talk with ${agent.name}`} description={`Have a question about buying, selling, or timing a move in ${agent.market}? Send a note or book directly.`} primaryCta={{ href: "#contact-form", label: "Send a message" }} secondaryCta={{ href: agent.bookingUrl, label: "Book a time" }} /><section className="bg-white px-6 py-20 lg:px-8"><div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr]"><div><p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">Direct details</p><h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">Reach out whenever the move starts to feel real.</h2><div className="mt-8 space-y-3 text-slate-700"><p><span className="font-semibold">Phone:</span> <a className="text-[var(--brand)]" href={`tel:${agent.phone}`}>{agent.phone}</a></p><p><span className="font-semibold">Email:</span> <a className="text-[var(--brand)]" href={`mailto:${agent.email}`}>{agent.email}</a></p><p><span className="font-semibold">Market:</span> {agent.market}</p><p><span className="font-semibold">Brokerage:</span> {agent.brokerage}</p></div></div><div id="contact-form"><LeadForm agentName={agent.name} leadType="contact" title="Contact form" description={`Send a message and ${agent.name} will follow up.`} /></div></div></section><BookingCTA agent={agent} /></main>;
+}

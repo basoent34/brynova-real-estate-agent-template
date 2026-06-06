@@ -1,0 +1,17 @@
+{
+  "name": "Maya Chen",
+  "brokerage": "BRYNOVA Realty Partners",
+  "market": "Austin, TX",
+  "phone": "(512) 555-0148",
+  "email": "maya.chen@example.com",
+  "bookingUrl": "https://calendly.com/maya-chen/consultation",
+  "crmWebhookUrl": "",
+  "brandColor": "#0E7490",
+  "headshotUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80",
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/",
+    "instagram": "https://www.instagram.com/",
+    "facebook": "https://www.facebook.com/",
+    "youtube": ""
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.vercel
+work/
+outputs/
+.env
+.env*.local
+config/agent.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+tsconfig.tsbuildinfo
